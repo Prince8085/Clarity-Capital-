@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Clarity Capital: An advanced AI trading bot for the Indian stock market (NSE, NIFTY 50). Get data-driven stock analysis, automated signals, and powerful SMC & Options analysis tools.">
+    <meta name="keywords" content="AI trading bot, stock analysis, NIFTY 50 signals, Indian stock market, SMC analysis, options trading, data-driven trading, Clarity Capital, Prince Kachhwaha, financial AI">
+    <title>Clarity Capital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Prevents FOUC (Flash of Unstyled Content) or flash of wrong theme
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'deep-space-blue': '#0E0B16',
+              'dark-matter-gray': '#1A1D2E',
+              'electric-cyan': '#00FFFF',
+              'pulsing-magenta': '#E024FF',
+              'light-azure': '#EAF0FF',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Oxanium', 'sans-serif'],
+              mono: ['Roboto Mono', 'monospace'],
+            },
+            keyframes: {
+              'fade-in': {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'pulse-glow': {
+                '0%, 100%': { 'box-shadow': '0 0 7px rgba(0, 255, 255, 0.2)' },
+                '50%': { 'box-shadow': '0 0 12px rgba(0, 255, 255, 0.6)' },
+              }
+            },
+            animation: {
+              'fade-in': 'fade-in 0.5s ease-out forwards',
+              'pulse-glow': 'pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            dropShadow: {
+              'glow-cyan': '0 0 7px rgba(0, 255, 255, 0.7)',
+              'glow-magenta': '0 0 7px rgba(224, 36, 255, 0.7)',
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oxanium:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.13.0",
+    "recharts": "https://esm.sh/recharts@^3.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-50 dark:bg-deep-space-blue text-slate-800 dark:text-light-azure antialiased font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

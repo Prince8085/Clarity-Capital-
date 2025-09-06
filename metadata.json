@@ -1,0 +1,8 @@
+{
+  "name": "Clarity Capital",
+  "description": "Clarity Capital is an advanced AI-powered trading analysis suite for the Indian market. Features a range of specialized tools (SMC, Options, Liquidity) and a central AI Confluence Engine to synthesize multiple analyses into a single, high-confidence trade plan. Also includes a Live Trading Hub for automated signal generation.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}
