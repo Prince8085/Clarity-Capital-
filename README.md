@@ -75,53 +75,7 @@ Follow these instructions to get a local copy up and running.
 - A modern web browser that supports ES Modules (Chrome, Firefox, Edge).
 - A valid Google Gemini API key.
 
-### Configuration: The API Key
 
-This project requires a Google Gemini API key to function.
-
-1.  **Get your API Key**: Obtain your key from [Google AI Studio](https://aistudio.google.com/app/apikey).
-
-2.  **Set the API Key**:
-    - Open the file: `services/geminiService.ts`
-    - Find the following line at the top of the file:
-      ```typescript
-      const API_KEY = process.env.API_KEY;
-      ```
-    - **Replace `process.env.API_KEY`** with your actual API key string:
-      ```typescript
-      // BEFORE
-      // const API_KEY = process.env.API_KEY;
-
-      // AFTER
-      const API_KEY = "YOUR_SECRET_GEMINI_API_KEY_HERE";
-      ```
-    - Save the file. **Do not commit this change to a public repository.**
-
-### Running the Application
-
-Because this project uses a modern, bundler-less setup, you don't need to run `npm install` or `npm start`. You simply need a local web server to serve the files.
-
-1.  **Clone the repository:**
-    ```sh
-    git clone https://github.com/your-username/clarity-capital.git
-    cd clarity-capital
-    ```
-
-2.  **Start a local server:**
-    If you have Python installed, you can easily start a server:
-    ```sh
-    # For Python 3
-    python -m http.server
-
-    # For Python 2
-    python -m SimpleHTTPServer
-    ```
-    Alternatively, you can use the VS Code "Live Server" extension or any other local server tool.
-
-3.  **Open in browser:**
-    Navigate to `http://localhost:8000` (or the port your server is running on) in your web browser. The application should now be running.
-
----
 
 ## 🤝 Contributing
 
