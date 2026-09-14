@@ -1,88 +1,124 @@
+<div align="center">
 
-# Clarity Capital 🧠⚡
+# 🧠 Clarity Capital
+### AI-Powered Trading Intelligence Suite for the Indian Stock Market
 
-> An advanced, AI-powered trading analysis suite designed for the Indian stock market. Clarity Capital leverages a "Neural Intelligence" design philosophy to create an immersive, futuristic interface that feels like a window into the mind of a sentient AI.
+[![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?style=flat&logo=typescript&logoColor=white)](https://typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat&logo=react&logoColor=white)](https://react.dev)
+[![Gemini](https://img.shields.io/badge/Gemini-AI%20Core-4285F4?style=flat&logo=google&logoColor=white)](https://deepmind.google)
 
-This application synthesizes multiple data points and analytical models into single, high-confidence trade plans, empowering traders with institutional-grade insights.
-
----
-
-## ✨ Created By
-
-This project was envisioned and built by **Prince Kachhwaha**.
-
-- **LinkedIn:** [https://www.linkedin.com/in/prince-kachhwaha-/](https://www.linkedin.com/in/prince-kachhwaha-/)
+</div>
 
 ---
 
-## 🚀 Live Demo
+## 🎯 Overview
 
-**[Link to your live demo here]**
+Clarity Capital is an **advanced AI trading analysis suite** built for the Indian stock market (NSE/BSE). It synthesizes technical analysis, option chain data, news sentiment, and AI reasoning into single, high-confidence trade plans — giving retail traders **institutional-grade insights**.
 
----
-
-## 📸 Screenshots
-
-*(Placeholder: Add screenshots of the Dashboard, AI Confluence Engine, and mobile views here to showcase the stunning UI.)*
+The UI is inspired by a *"Neural Intelligence"* design philosophy — futuristic, immersive, and built for speed.
 
 ---
 
-## 🌟 Core Features
+## ✨ Features
 
-- **AI Confluence Engine**: The core of the platform. It synthesizes evidence from various specialized tools into a single, master trade plan with a clear confidence score.
-- **Live Trading Hub**: Delivers real-time, automated trade signals for the NIFTY 50 index based on a continuous analysis of market confluence.
-- **Specialized Analysis Tools**: A suite of powerful modules, each targeting a specific trading discipline:
-  - **SMC Analyzer**: Analyzes charts for Smart Money Concepts.
-  - **AI Option Chain Analyzer**: Provides strategic breakdowns from option chain screenshots.
-  - **AI Liquidity Hunter**: Identifies key liquidity zones to anticipate stop hunts.
-  - **Scalper's Edge AI**: Offers immediate, actionable insights for short-term charts.
-- **Portfolio Tracker**: A complete interface to monitor your holdings, track your Profit & Loss, and visualize asset allocation.
-- **AI History & Bookmarks**: Automatically saves every AI-generated response. Users can bookmark crucial insights for quick access.
-- **Customizable Experience**: Features a theme toggle (Dark/Light mode) and user preferences that persist across sessions.
-- **Fully Mobile-Responsive**: Complex data tables and dashboards are intelligently redesigned into a user-friendly card format on smaller screens.
-- **Interactive UI**: A sleek, futuristic interface with glassmorphism, glowing effects, and animated backgrounds to create an immersive experience.
+### 📊 Multi-Source Data Synthesis
+- Real-time NSE/BSE price feeds integration
+- Option chain analysis for market sentiment gauging
+- Technical indicator stack (RSI, MACD, Bollinger Bands, Volume)
+- News sentiment scoring via NLP
 
----
+### 🤖 AI Trade Plans
+- Gemini AI generates structured trade plans with entry, exit, stop-loss
+- Confidence scoring per trade recommendation
+- Risk/reward ratio calculation
+- Multi-timeframe analysis (intraday, swing, positional)
 
-## 🎨 Design Philosophy: "Neural Intelligence"
+### 📈 Interactive Dashboards
+- Recharts-powered real-time visualizations
+- Option chain heatmaps
+- P&L scenario builder
+- Historical backtesting view
 
-The UI is crafted to feel like an extension of an intelligent, living system.
-
-- **Vibe**: Dark, futuristic, and electric, inspired by neural networks and bionic interfaces.
-- **Color Palette**: A deep space blue background is accented with electric cyan and pulsing magenta to highlight data and interactive elements.
-- **Effects**: Glassmorphism, glow effects, and subtle animations are used to create depth and a sense of emitted light, enhancing the high-tech feel.
-- **Typography**: A mix of futuristic display fonts (`Oxanium`) and clean, monospaced fonts (`Roboto Mono`) ensures both style and perfect data alignment.
+### ⚡ Real-time Streaming
+- WebSocket price feeds
+- Live AI commentary via SSE streaming
+- Sub-second UI updates
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React, TypeScript, React Hooks
-- **Styling**: Tailwind CSS (with a custom design system)
-- **AI Integration**: Google Gemini API (`@google/genai`)
-- **Charting**: Recharts
-- **State Management**: React Context API
-- **Deployment**: Modern bundler-less setup using ES Modules and Import Maps.
+| Layer | Technology |
+|---|---|
+| Framework | React 18 + Vite 5 |
+| Language | TypeScript (strict) |
+| AI Core | Google Gemini API |
+| Charts | Recharts |
+| Styling | Tailwind CSS + custom neural theme |
+| State | React Context + hooks |
+| Data | WebSocket + REST APIs |
+| Build | Vite + ESBuild |
 
 ---
 
-## ⚙️ Getting Started
+## ⚡ Quick Start
 
-Follow these instructions to get a local copy up and running.
+```bash
+# 1. Clone
+git clone https://github.com/Prince8085/Clarity-Capital-.git
+cd Clarity-Capital-
 
-### Prerequisites
+# 2. Install
+npm install
 
-- A modern web browser that supports ES Modules (Chrome, Firefox, Edge).
-- A valid Google Gemini API key.
+# 3. Configure
+# Create .env with:
+# VITE_GEMINI_API_KEY=your_gemini_api_key
 
-
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+# 4. Run
+npm run dev
+# Open http://localhost:5173
+```
 
 ---
 
-## 📄 License
+## 🏗️ Architecture
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+```
+┌─────────────────────────────────────┐
+│           React Frontend            │
+│  Dashboard · Charts · Trade Plans   │
+└──────────────┬──────────────────────┘
+               │
+    ┌──────────▼──────────┐
+    │   Gemini AI Core    │  ← Trade plan generation
+    │   Analysis Engine   │  ← Sentiment + technicals
+    └──────────┬──────────┘
+               │
+    ┌──────────▼──────────┐
+    │   Data Layer        │
+    │  WebSocket Feeds    │
+    │  NSE/BSE APIs       │
+    │  News Aggregator    │
+    └─────────────────────┘
+```
+
+---
+
+## 📊 Key Metrics
+
+| Capability | Detail |
+|---|---|
+| Markets covered | NSE + BSE (Indian equities + F&O) |
+| Analysis modes | Intraday / Swing / Positional |
+| AI model | Google Gemini Pro |
+| Update frequency | Real-time (WebSocket) |
+| Trade plan generation | < 3 seconds |
+
+---
+
+## 👨💻 Built By
+
+**Prince Khatik** — Founder, Innovix Solutions  
+[LinkedIn](https://linkedin.com/in/prince-kachhwaha-) · [Portfolio](https://princekachhwaha.tech) · [GitHub](https://github.com/Prince8085)
